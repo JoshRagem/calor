@@ -1,0 +1,23 @@
+{
+  "name": "calor",
+  "version": "0.0.0",
+  "description": "a simple terminal text colorizer. simple simple simple. simple.",
+  "main": "calor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pagodajosh/calor.git"
+  },
+  "keywords": [
+    "color",
+    "terminal",
+    "colorize"
+  ],
+  "author": "Joshua Barney <josh@pagodabox.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pagodajosh/calor/issues"
+  }
+}
