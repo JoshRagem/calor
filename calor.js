@@ -1,5 +1,4 @@
-var hascolor = require('has-color'),
-Color = require('./colors/color')
+var Color = require('./colors/color')
 
 module.exports = {
     color: Color,

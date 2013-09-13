@@ -1,10 +1,23 @@
+var color_map = require('./colors'),
+num_map = [
+    '00',
+    '5f',
+    '87',
+    'af',
+    'd7',
+    'df',
+    'ff'
+]
+
 function calculate_color(r,g,b) {
-//    fix this later to throw error on invalid numbers
-    var sum = 16
-    sum += b
-    sum += 16*g
-    sum += 36*r
-    return sum
+    key = [r,g,b].map(function(v){
+        return num_map[v]
+    }).join('')
+    var val = color_map[key]
+    if (!val) {
+        throw new Error("invalid color: "+key+" aka: "+[r,g,b].join())
+    }
+    return val
 }
 
 function Color(r,g,b,type,background) {

@@ -1,6 +1,6 @@
 {
   "name": "calor",
-  "version": "0.0.1-a",
+  "version": "0.0.1-b",
   "description": "a simple terminal text colorizer. simple simple simple. simple.",
   "main": "calor.js",
   "scripts": {
