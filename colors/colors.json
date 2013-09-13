@@ -1,0 +1,7 @@
+{
+    "reset" : "\x1B[0m",
+    "reset" : "\x1B[1m",
+    "underline" : "\x1B[4m",
+    "invert" : "\x1B[7m",
+    "hidden" : "\x1B[8m"
+}
