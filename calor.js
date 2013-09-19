@@ -1,8 +1,22 @@
 var Color = require('./colors/color'),
+type_map = {
+    'r':0,
+    'b':1,
+    '_':4,
+    'i':7,
+    'h':8,
+    '-':9
+},
 text = function(r,g,b,type){
+    if (type) {
+        type = type_map[type] || type
+    }
     return Color(r,g,b,type,false)
 },
 background = function(r,g,b,type){
+    if (type) {
+        type = type_map[type] || type
+    }
     return Color(r,g,b,type,true)
 }
 
@@ -22,6 +36,7 @@ text.INVERT = Color.raw_effect(38,7)
 text.HIDDEN = Color.raw_effect(38,8)
 text.STRIKE = Color.raw_effect(38,9)
 text.grey = function(num){
+    num = +num
     num += 232
     return Color.raw_color(38,num)
 }
@@ -41,6 +56,7 @@ background.INVERT = Color.raw_effect(48,7)
 background.HIDDEN = Color.raw_effect(48,8)
 background.STRIKE = Color.raw_effect(48,9)
 background.grey = function(num){
+    num = +num
     num += 232
     return Color.raw_color(48,num)
 }

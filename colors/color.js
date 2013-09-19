@@ -39,7 +39,7 @@ function Color(r,g,b,type,background) {
     effect = prefix + type + ';' + num + 'm'
     end_effect = prefix + '0m'
     color = prefix + '5;' + num + 'm'
-    end_color = prefix + ';0m'
+    end_color = prefix + '0m'
 
     self = function(str){
         var strs = Array.prototype.slice.call(arguments)
