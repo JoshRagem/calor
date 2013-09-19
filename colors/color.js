@@ -37,9 +37,9 @@ function Color(r,g,b,type,background) {
 
     prefix = '\x1B[' + where + ';'
     effect = prefix + type + ';' + num + 'm'
-    end_effect = prefix + '0;' + num + 'm'
+    end_effect = prefix + '0m'
     color = prefix + '5;' + num + 'm'
-    end_color = prefix + '5;0m'
+    end_color = prefix + ';0m'
 
     self = function(str){
         var strs = Array.prototype.slice.call(arguments)
@@ -74,7 +74,7 @@ function Raw(where,type,num){
     prefix = '\x1B[' + where + ';'
     if (num) {
         effect = prefix + '5;' + num + 'm'
-        end_effect = prefix + '5;0m'
+        end_effect = prefix + '0m'
     } else {
         effect = prefix + type + 'm'
         end_effect = prefix + '0m'

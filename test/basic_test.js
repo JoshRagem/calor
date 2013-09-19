@@ -1,17 +1,17 @@
 var calor = require('../')
 
-console.log(calor.RED + "this is a red string" + calor.RESET)
+console.log(calor.text.RED + "this is a red string" + calor.text.RESET)
 
-var red = calor.color(4,0,0)
+var red = calor.text(4,0,0)
 console.log(red('this is also a red string'))
 
-var blue_under = calor.color(0,0,4,calor.UNDERLINE)
+var blue_under = calor.text(0,0,4,calor.text.UNDERLINE)
 console.log(blue_under('this is also a blue underline string'))
 
-var random = calor.color(2,3,4)
+var random = calor.background(2,3,4)
 console.log(random('this is some color'))
 
-var grey = calor.grey(12)
+var grey = calor.text.grey(12)
 console.log(grey('this is grey 12'))
 
 //var stream = new calor.stream(process.stdout)
