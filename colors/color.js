@@ -10,7 +10,7 @@ num_map = [
 ]
 
 function calculate_color(r,g,b) {
-    key = [r,g,b].map(function(v){
+    var key = [r,g,b].map(function(v){
         return num_map[v]
     }).join('')
     var val = color_map[key]
@@ -21,7 +21,8 @@ function calculate_color(r,g,b) {
 }
 
 function Color(r,g,b,type,background) {
-    var num, self, where, prefix
+    var num, self, where, prefix,
+    effect, end_effect, color, end_color
     num = calculate_color(r,g,b)
 
     if (typeof type == 'boolean') {
