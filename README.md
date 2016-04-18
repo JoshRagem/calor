@@ -1,3 +1,5 @@
+This library is not maintained. It seems also that the color reference I used was not correct and this led to bugs.
+
 calor
 =====
 
